@@ -1,0 +1,25 @@
+/*
+ * RESET
+ */
+
+*     { 
+    /* Posicionamento e Espaçamento geral */
+    padding: 0; margin: 0; box-sizing: border-box; outline: none;
+    /* Tipografia */
+    font-family: 'Roboto';
+    font-size: 100%;
+    font-weight: 400;
+    color: #212121;
+}
+body  { background: #f8f8f8; }
+img   { max-width: 100%; }
+a     { text-decoration: none; }
+
+.row {
+    width: 100%;
+    max-width: 3000px;
+}
+.row .row-center {
+    width: 1005px;
+    margin: 0 auto;
+}

@@ -1,0 +1,51 @@
+/* 
+ *  MENU DE NAVEGACAO 
+ */
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    height: 70px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu #menu-logonav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logotipo {
+    width: 130px;
+    height: 49px;
+    font-size: 0;
+    background: url('../images/logo/logotipo-menu.png') center center no-repeat;
+}
+
+#menu #nav {
+
+}
+
+#menu #nav a {
+    text-transform: uppercase;
+    margin-right: 20px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    opacity: .8;
+}
+#menu #nav a:last-child {
+    margin-right: 0;
+}
+#menu #nav a:hover {
+    opacity: 1;
+}
