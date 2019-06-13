@@ -6,6 +6,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
     background: #fff;
     height: 70px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
@@ -45,7 +46,84 @@
 }
 #menu #nav a:last-child {
     margin-right: 0;
+    opacity: 1;
 }
 #menu #nav a:hover {
     opacity: 1;
+}
+
+/* 
+ *  SLIDE
+ */
+
+#slide {
+    position: relative;
+    height: 468px;
+}
+
+#slide #slide-images {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+#slide #slide-images::before{
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(219.9deg, rgba(33, 33, 33, 0) 33.15%, rgba(200, 0, 0, 0.5) 100%);
+}
+
+#slide #slide-images > *{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#slide #slide-images .slide-image:nth-child(1) {
+    animation-delay: 5s;
+    background: url(../images/slide/1.jpg) center -305px / 100% auto no-repeat;
+}
+
+/* redes sociais no slide */
+
+#slide #slide-social {
+    position: absolute;
+    z-index: 15;
+    bottom: 30px;
+    left: calc( 50% - 502.5px );
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#slide #slide-social .slide-social-icon {
+    width: 30px;
+    height: 30px;
+    border: solid #fff 1px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    transition: .5s all;
+}
+
+#slide #slide-social .slide-social-icon:hover {
+    transform: rotate(-45deg)
+}
+
+#slide #slide-social .slide-social-icon .fa, 
+#slide #slide-social .slide-social-icon .fab,
+#slide #slide-social .slide-social-icon .fas {
+    color: #fff;
 }
