@@ -345,3 +345,100 @@
 #gallery #gallery-images .gallery-image-440 {
     height: 440px;
 }
+
+/* 
+ *  SERVICOS
+ */
+
+#services {
+    margin-bottom: 60px;
+}
+
+#services #services-items{
+    display: flex ;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+}
+
+#services #services-items .service {
+    width: 240px;
+    margin-right: 15px;
+    position: relative;
+}
+
+#services #services-items .service:last-child {
+    margin-right: 0;
+}
+#services #services-items .service .service-icon {
+    width: 90px;
+    height: 90px;
+    border: solid 1px #c80000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: calc( 100% - 45px );
+    left: calc( 50% - 45px );
+    z-index: 16;
+    transition: 1s all;
+}
+
+#services #services-items .service:hover .service-icon {
+    transform: rotate(-360deg);
+}
+
+#services #services-items .service .service-icon .fas,
+#services #services-items .service .service-icon .fa,
+#services #services-items .service .service-icon .fas,
+#services #services-items .service .service-icon .far {
+    font-size: 38px;
+    color: #212121;
+}
+
+
+#services #services-items .service .service-info {
+    width: 100%;
+    height: 270px;
+    background: #fff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#services-items .service .service-info h4 {
+    width: 210px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#services-items .service .service-info p {
+    width: 210px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000 /*4B4747*/;
+    margin-bottom: 30px;
+}
+
+#services-items .service .service-info .btn {
+    margin-bottom: 25px;
+}
+
+/* 
+ *  PROMO
+ */
