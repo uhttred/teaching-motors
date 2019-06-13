@@ -400,7 +400,6 @@
     color: #212121;
 }
 
-
 #services #services-items .service .service-info {
     width: 100%;
     height: 270px;
@@ -440,5 +439,87 @@
 }
 
 /* 
- *  PROMO
+ *  EVENT
  */
+
+#event {
+    display: flex;
+    height: 450px;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.15)
+}
+
+#event-image {
+    width: 50%;
+    height: 100%;
+    background: #212121;
+}
+
+#event-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+
+#event-info {
+    width: 50%;
+    height: 100%;
+    background: #fff;
+    padding-left: 15px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#event-info h3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 15px;
+}
+
+
+#event-info p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;    
+    margin-bottom: 20px;
+    width: 430px;
+}
+
+/* 
+ *  FOOTER
+ */
+
+#footer #footer-info {
+    width: 100%;
+    height: 200px;
+    background: #212121;
+}
+
+#footer #footer-copy {
+    width: 100%;
+    height: 50px;
+    background: #000;
+    
+}
+
+#footer #footer-copy .row-center {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer #footer-copy p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    opacity: 0.8;
+}
